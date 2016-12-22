@@ -64,6 +64,6 @@ E:\Visual Studio Project\MyApplication\MyApplication\bin\Microsoft.Owin.Security
 E:\Visual Studio Project\MyApplication\MyApplication\bin\Microsoft.Owin.Security.Google.xml
 E:\Visual Studio Project\MyApplication\MyApplication\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Visual Studio Project\MyApplication\MyApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.csprojResolveAssemblyReference.cache
 E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.dll
 E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.pdb
-E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.csprojResolveAssemblyReference.cache
