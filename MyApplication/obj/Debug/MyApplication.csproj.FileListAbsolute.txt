@@ -67,3 +67,6 @@ E:\Visual Studio Project\MyApplication\MyApplication\bin\Microsoft.Owin.Security
 E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.csprojResolveAssemblyReference.cache
 E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.dll
 E:\Visual Studio Project\MyApplication\MyApplication\obj\Debug\MyApplication.pdb
+E:\Visual Studio Project\ProjectResturant\MyApplication\obj\Debug\MyApplication.csprojResolveAssemblyReference.cache
+E:\Visual Studio Project\ProjectResturant\MyApplication\obj\Debug\MyApplication.dll
+E:\Visual Studio Project\ProjectResturant\MyApplication\obj\Debug\MyApplication.pdb
