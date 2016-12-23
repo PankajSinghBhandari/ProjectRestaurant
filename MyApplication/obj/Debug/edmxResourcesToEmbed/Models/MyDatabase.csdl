@@ -9,19 +9,6 @@
     <Property Name="CreatedDate" Type="DateTime" Precision="3" />
     <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
   </EntityType>
-  <EntityType Name="CustomerDetail">
-    <Key>
-      <PropertyRef Name="CustomerId" />
-    </Key>
-    <Property Name="CustomerId" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ContactNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
-    <Property Name="OrderId" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
-    <Property Name="Price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
-    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-  </EntityType>
   <EntityType Name="FoodType">
     <Key>
       <PropertyRef Name="FoodTypeId" />
@@ -57,7 +44,6 @@
   </EntityType>
   <EntityContainer Name="ResturantEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Categories" EntityType="Self.Category" />
-    <EntitySet Name="CustomerDetails" EntityType="Self.CustomerDetail" />
     <EntitySet Name="FoodTypes" EntityType="Self.FoodType" />
     <EntitySet Name="Items" EntityType="Self.Item" />
     <EntitySet Name="Orders" EntityType="Self.Order" />

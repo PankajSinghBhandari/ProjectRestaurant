@@ -26,9 +26,10 @@ namespace MyApplication.Models
         }
     
         public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<CustomerDetail> CustomerDetails { get; set; }
         public virtual DbSet<FoodType> FoodTypes { get; set; }
         public virtual DbSet<Item> Items { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
+
+        public System.Data.Entity.DbSet<MyApplication.Models.OurItem> OurItems { get; set; }
     }
 }

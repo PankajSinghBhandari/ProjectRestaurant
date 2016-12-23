@@ -14,19 +14,6 @@
           <Property Name="CreatedDate" Type="datetime" />
           <Property Name="ModifiedDate" Type="datetime" />
         </EntityType>
-        <EntityType Name="CustomerDetail">
-          <Key>
-            <PropertyRef Name="CustomerId" />
-          </Key>
-          <Property Name="CustomerId" Type="int" Nullable="false" />
-          <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="ContactNo" Type="varchar" MaxLength="25" />
-          <Property Name="OrderId" Type="varchar" MaxLength="25" />
-          <Property Name="Price" Type="varchar" MaxLength="10" />
-          <Property Name="Comment" Type="varchar" MaxLength="100" />
-          <Property Name="CreatedDate" Type="datetime" />
-          <Property Name="ModifiedDate" Type="datetime" />
-        </EntityType>
         <EntityType Name="FoodType">
           <Key>
             <PropertyRef Name="FoodTypeId" />
@@ -62,7 +49,6 @@
         </EntityType>
         <EntityContainer Name="ResturantModelStoreContainer">
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="CustomerDetail" EntityType="Self.CustomerDetail" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FoodType" EntityType="Self.FoodType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
@@ -78,19 +64,6 @@
           </Key>
           <Property Name="CategoryId" Type="Int32" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
-          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
-        </EntityType>
-        <EntityType Name="CustomerDetail">
-          <Key>
-            <PropertyRef Name="CustomerId" />
-          </Key>
-          <Property Name="CustomerId" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ContactNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
-          <Property Name="OrderId" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
-          <Property Name="Price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="CreatedDate" Type="DateTime" Precision="3" />
           <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
         </EntityType>
@@ -129,7 +102,6 @@
         </EntityType>
         <EntityContainer Name="ResturantEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categories" EntityType="Self.Category" />
-          <EntitySet Name="CustomerDetails" EntityType="Self.CustomerDetail" />
           <EntitySet Name="FoodTypes" EntityType="Self.FoodType" />
           <EntitySet Name="Items" EntityType="Self.Item" />
           <EntitySet Name="Orders" EntityType="Self.Order" />
@@ -145,20 +117,6 @@
               <MappingFragment StoreEntitySet="Category">
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="CustomerDetails">
-            <EntityTypeMapping TypeName="ResturantModel.CustomerDetail">
-              <MappingFragment StoreEntitySet="CustomerDetail">
-                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
-                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="Comment" ColumnName="Comment" />
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
                 <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
               </MappingFragment>

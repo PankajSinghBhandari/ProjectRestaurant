@@ -172,14 +172,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OurItemsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs">
-      <DependentUpon>MyDatabase.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CustomerDetail.cs">
       <DependentUpon>MyDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\FoodType.cs">
@@ -208,6 +206,7 @@
     <Compile Include="Models\Order.cs">
       <DependentUpon>MyDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\OurItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -285,6 +284,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\OurItems\Create.cshtml" />
+    <Content Include="Views\OurItems\Delete.cshtml" />
+    <Content Include="Views\OurItems\Details.cshtml" />
+    <Content Include="Views\OurItems\Edit.cshtml" />
+    <Content Include="Views\OurItems\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

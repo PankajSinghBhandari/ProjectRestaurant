@@ -9,19 +9,6 @@
     <Property Name="CreatedDate" Type="datetime" />
     <Property Name="ModifiedDate" Type="datetime" />
   </EntityType>
-  <EntityType Name="CustomerDetail">
-    <Key>
-      <PropertyRef Name="CustomerId" />
-    </Key>
-    <Property Name="CustomerId" Type="int" Nullable="false" />
-    <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="ContactNo" Type="varchar" MaxLength="25" />
-    <Property Name="OrderId" Type="varchar" MaxLength="25" />
-    <Property Name="Price" Type="varchar" MaxLength="10" />
-    <Property Name="Comment" Type="varchar" MaxLength="100" />
-    <Property Name="CreatedDate" Type="datetime" />
-    <Property Name="ModifiedDate" Type="datetime" />
-  </EntityType>
   <EntityType Name="FoodType">
     <Key>
       <PropertyRef Name="FoodTypeId" />
@@ -57,7 +44,6 @@
   </EntityType>
   <EntityContainer Name="ResturantModelStoreContainer">
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="CustomerDetail" EntityType="Self.CustomerDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FoodType" EntityType="Self.FoodType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
